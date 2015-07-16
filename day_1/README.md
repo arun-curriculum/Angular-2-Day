@@ -145,6 +145,12 @@ app.config(["$routeProvider", function($routeProvider) {
 }]);
 ```
 
+- In order to use this new ngRoute module however it has to be one of our dependencies in our module setup:
+
+```javascript
+var app = angular.module("wineApp", ["ngRoute"]);
+```
+
 ##Custom Directives
 - We have already seen how directives enhance the functionality of the page.
 - If we want to create custom functionality that can be reused throughout the app we can register our own custom directive.
