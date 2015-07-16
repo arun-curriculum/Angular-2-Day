@@ -126,6 +126,7 @@ app.controller("userListController", function($scope, $http) {
 - In this lab we will be using Angular to send a GET request to pull a list of wines.
 - Set up a new Angular project and try to make a GET request to `http://daretodiscover.herokuapp.com/wines`.
 - Use the front end provided [here](wine_manager_html/) to display the wine data on the page.
+- Make a POST request to the same url with the data from the add wine modal window form.
 
 ##$routeProvider
 - Routes allow you to add multiple page functionality to your app.
