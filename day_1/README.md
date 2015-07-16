@@ -151,6 +151,16 @@ app.config(["$routeProvider", function($routeProvider) {
 var app = angular.module("wineApp", ["ngRoute"]);
 ```
 
+#####Accessing route parameters
+
+- In order to access parameters that are passed into a URL, you will need to inject $routeParams into your controller:
+
+```javascript
+app.controller("wineCtrl", function($scope, $http, $routeParams) {
+	console.log($routeParams.id);
+});
+```
+
 ##Custom Directives
 - We have already seen how directives enhance the functionality of the page.
 - If we want to create custom functionality that can be reused throughout the app we can register our own custom directive.
