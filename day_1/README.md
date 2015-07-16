@@ -5,7 +5,7 @@
 
 ##Install Software
 - [Install NodeJS](https://nodejs.org/)
-- [Install simplehttpserver](https://www.npmjs.com/package/simplehttpserver)
+- [Install simplehttpserver](https://github.com/andrewpthorp/simple-http-server/)
 
 ##App Setup
 - Angular apps have some basic configuration that we need to do before they can be run.
