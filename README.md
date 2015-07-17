@@ -8,13 +8,10 @@
 - Built-in directives
 - $http
 - $routeProvider
-- Custom directives
-- Filters
 
 ###[Day 2](day_2/)
-- $resource
-- Factories and services
-- UI router
 - Animations
-- $location
-- Forms
+- Factories
+- $resource
+- Custom directives
+- Filters
