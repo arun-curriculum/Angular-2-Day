@@ -1,5 +1,48 @@
 #Angular Continued
 
+##ngAnimate
+- ngAnimate is a module that allows us to perform animations on elements selectively.
+- This functionality requires the ngAnimate module from the Angular extras.
+- Let's take a look at the documentation [here](https://docs.angularjs.org/api/ngAnimate/).
+- Animations work by applying the `.ng-enter`, `.ng-enter-active`, `.ng-leave`, or `.ng-leave-active` classes on any of your existing classes.
+- Your classes should implement some sort of CSS3 animation.
+- Let's try this out with some pre-built css classes to help us out: https://github.com/Augus/ngAnimate.
+
+##Wine List Lab Part 3
+- In this part of the lab we will implement some animations between views.
+- Use your existing application and create an animation between the wine list and the edit view.
+- Experiment using different CSS3 properties.
+
+##Factories
+- Factories allow us to create Angular code that is modular and reusable.
+- We can create methods within factories that can be injected into controllers throughout a module.
+- This is often used to streamline work with API calls and other functionality that has to be replicated over and over.
+- Let's see a simple example:
+
+```javascript
+app.factory("Helpers", function() {
+	var factory = {};
+	
+	factory.addTo = function(array, item) {
+		return array.push(item);
+	}
+	
+	factory.removeFrom = function(array, index) {
+		return array.splice(index, 1);
+	}
+	
+	return factory;
+});
+```
+
+- Now in our controller we have:
+
+```javascript
+app.controller("wineCtrl", function($scope, Helpers) {
+	$scope.wines = Helpers.addTo($scope.wines, "New Wine");
+});
+```
+
 ##$resource
 - $resource is a higher-level abstraction on $http.
 - It gives us a few pre-defined routes that we can use to easily query a server backend.
@@ -32,9 +75,10 @@ app.controller("wineCtrl", function($scope, $http, $resource) {
 	- `remove()` - DELETE /wines/:id
 	- `delete()` - DELETE /wines/:id
 
-##Wine List Lab Part 3
+##Wine List Lab Part 4
 - For this lab we will be refactoring our API query code to use resources.
 - Your job is to remove the $http calls and instead use $resource.
+- You will also be breaking out the logic for these calls into factories.
 - You may want to refer to web tutorials to help you:
 	- [Angular guide](https://docs.angularjs.org/api/ngResource/service/$resource)
 	- [CRUD app with resources](http://www.sitepoint.com/creating-crud-app-minutes-angulars-resource/)
