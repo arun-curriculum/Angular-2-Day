@@ -13,5 +13,5 @@
 - Animations
 - Factories
 - $resource
-- Custom directives
 - Filters
+- Custom directives
