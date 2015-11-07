@@ -12,6 +12,18 @@
 - Because Angular uses AJAX to load in its views, it's best to run any Angular app via a server.
 - We will be using simplehttpserver that we downloaded earlier to accomplish this.
 
+##### Mac
+
+```
+python -m SimpleHTTPServer 3000
+```
+
+##### Windows
+
+```
+python -m http.server 3000
+```
+
 ##Data Binding
 - One of the core aspects of Angular is data binding.
 - Angular is a two-way binding system. This means that data that is inputted on the HTML side is also immediately available to JavaScript.
