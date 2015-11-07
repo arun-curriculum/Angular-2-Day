@@ -113,7 +113,7 @@ app.controller("userListController", function($scope) {
 - We will be building a todo list using Angular.
 - The front end is already done for you [here](todo_html/).
 - Use each of the concepts we learned to make your app work.
-- **Bonus:** When each todo is clicked, create a strikethrough on the todo text.
+- **Bonus:** When each delete button is clicked, create a strikethrough on the todo text.
 - **Bonus:** Persist your data using localStorage.
 
 ##Using $http for AJAX Calls
